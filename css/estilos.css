@@ -35,28 +35,6 @@
     margin: 30px;
 }
 
-/*.nav {
-    background-color: darkorange;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-}¨*/
-/*.nav {
- background-image: linear-gradient(to right, red , yellow);
- height: 100vh;
- width: 100%;
- display: flex;
-}*/
-
-
-/*.container .titulo {
-    color: white;
-    font-size: 10rem;
-    font-family: 'Comforter Brush';
-    margin: 20vh auto;
-    text-align: center;
-}*/
-
 .sucursales {
     color: white;
     font-size: 3rem;
@@ -69,16 +47,16 @@
 .combos {
     font-size: 3rem;
     font-family: 'Bebas Neue';
-    color: black;
+    color: orangered;
     margin: 25px;
     text-align: center;
 }
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    padding: 20px;
+    padding: 10px;
     grid-gap: 10px;
 }
 
@@ -88,8 +66,12 @@
     object-fit: cover;
 }
 
-.gallery__item {
+.gallery__item{
     position: relative;
+    margin-bottom: 60px;
+    margin-left: 25px;
+    width: 90%;
+    height: 90%;
 }
 
 .gallery__title {
@@ -103,11 +85,74 @@
 .sello {
     position: absolute;
     bottom: 0;
+    color: cyan;
+    text-align: center;
+    font-family: 'Faster One';
+}
+
+.sello1 {
+    position: absolute;
+    bottom: 0;
     color: darkred;
     text-align: center;
     font-family: 'Faster One';
 }
 
+.sello2 {
+    position: absolute;
+    bottom: 0;
+    color: darkgreen;
+    text-align: center;
+    font-family: 'Faster One';
+}
+
+.sello3 {
+    position: absolute;
+    bottom: 0;
+    color: darkblue;
+    text-align: center;
+    font-family: 'Faster One';
+}
+
+.sello4 {
+    position: absolute;
+    bottom: 0;
+    color: yellowgreen;
+    text-align: center;
+    font-family: 'Faster One';
+}
+
+.sello5 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Faster One';
+}
+
+.sello6 {
+    position: absolute;
+    bottom: 0;
+    color: indianred;
+    text-align: center;
+    font-family: 'Faster One';
+}
+
+.sello7 {
+    position: absolute;
+    bottom: 0;
+    color: lightyellow;
+    text-align: center;
+    font-family: 'Faster One';
+}
+
+.sello8 {
+    position: absolute;
+    bottom: 0;
+    color: green;
+    text-align: center;
+    font-family: 'Faster One';
+}
 .sellos {
      position: absolute;
     bottom: 0;
@@ -115,8 +160,8 @@
     text-align: center;
     font-family: 'Big Shoulders Stencil Display';
     font-size: 5rem;
-    padding-left: 30px;
-    padding-bottom: 70px;
+    padding-left: 60px;
+    padding-bottom: 100px;
     transform: rotate(40deg);
 }
 @media all and (min-width: 768px) and (max-width: 980px) {
