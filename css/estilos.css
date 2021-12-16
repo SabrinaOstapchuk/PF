@@ -35,28 +35,6 @@
     margin: 30px;
 }
 
-/*.nav {
-    background-color: darkorange;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-}¨*/
-/*.nav {
- background-image: linear-gradient(to right, red , yellow);
- height: 100vh;
- width: 100%;
- display: flex;
-}*/
-
-
-/*.container .titulo {
-    color: white;
-    font-size: 10rem;
-    font-family: 'Comforter Brush';
-    margin: 20vh auto;
-    text-align: center;
-}*/
-
 .sucursales {
     color: white;
     font-size: 3rem;
@@ -164,7 +142,7 @@
     left: 10px;
 }
 
-.fondo {
+.fondo{
     height: 50%;
     width: 100%;
     display: flex;
@@ -185,7 +163,6 @@
 .ilustracion {
     text-align: center;
     margin-left: 450px;
-
 }
 
 .suscripcion {
