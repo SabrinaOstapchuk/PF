@@ -209,7 +209,7 @@
     left: 10px;
 }
 
-.fondo {
+.fondo{
     height: 50%;
     width: 100%;
     display: flex;
@@ -230,7 +230,6 @@
 .ilustracion {
     text-align: center;
     margin-left: 450px;
-
 }
 
 .suscripcion {
