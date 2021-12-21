@@ -10,29 +10,17 @@
     box-sizing: border-box;
 }
 
-.header {
+.nav{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    text-align: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: black;
-}
-
-.Barra {
-    margin: 0 auto;
-}
-
-.Barra li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.Barra a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Bebas Neue';
-    font-size: 3rem;
-    text-align: left;
-    margin: 30px;
 }
 
 .sucursales {
@@ -168,16 +156,46 @@
     .gallery-container {
         grid-template-columns: repeat(3, 1fr);
     }
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 13rem;
+    }
+    .dibujo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .formulario {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media all and (min-width: 576px) and (max-width: 768px) {
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 9rem;
+    }
+    .dibujo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .formulario {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media all and (min-width: 0px) and (max-width: 576px) {
     .gallery-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contenedor {
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 5rem;
+    }
+    .dibujo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .formulario {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -220,7 +238,7 @@
     font-family: 'Oswald';
     font-size: 1rem;
     color: black;
-    box-sizing: border-box;
+list    box-sizing: border-box;
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
@@ -240,7 +258,6 @@
 
 .form {
     margin-left: 460px;
-    margin-bottom: 20px;
     box-sizing: border-box;
     width: 30%; 
 }
