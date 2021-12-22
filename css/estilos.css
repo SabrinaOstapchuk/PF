@@ -1,263 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+/* line 1, ../../../../../Documents/PF/scss/_main.scss */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border box;
 }
 
-.nav{
-    list-style-type: none;
-    color: white;
-    text-decoration: none;
-    font-family: 'Bebas Neue';
-    font-size: 2rem;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
+/* line 8, ../../../../../Documents/PF/scss/_main.scss */
+.nav {
+  flex-wrap: wrap;
+  background-color: black;
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  font-family: 'Bebas Neue';
+  font-size: 3rem;
+  text-align: left;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
 }
 
-.sucursales {
-    color: white;
-    font-size: 3rem;
-    font-family: 'Bebas Neue';
-    background-color: black;
-    text-align: center;
-    margin: auto;
+/* line 20, ../../../../../Documents/PF/scss/_main.scss */
+.nav .nav-item {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 2px;
+  margin: 2px;
 }
 
-.combos {
-    font-size: 3rem;
-    font-family: 'Bebas Neue';
-    color: orangered;
-    margin: 25px;
-    text-align: center;
+/* line 26, ../../../../../Documents/PF/scss/_main.scss */
+.nav .nav-item .nav-link {
+  font-family: 'Bebas Neue';
+  color: white;
 }
 
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    padding: 10px;
-    grid-gap: 10px;
+/* line 33, ../../../../../Documents/PF/scss/_main.scss */
+.fondo {
+  height: 100vh;
+  height: 50%;
+  width: 100%;
+  display: flex;
 }
 
-.gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* line 40, ../../../../../Documents/PF/scss/_main.scss */
+.titulo {
+  color: white;
+  font-size: 15rem;
+  font-family: 'Comforter Brush';
+  margin-top: 50px;
+  margin-right: 150px;
+  margin-left: 150px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
-.gallery__item{
-    position: relative;
-    margin-bottom: 60px;
-    margin-left: 25px;
-    width: 90%;
-    height: 90%;
-}
-
-.gallery__title {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    text-align: center;
-    font-family: 'Roboto Condensed'; 
-}
-
-.sello {
-    position: absolute;
-    bottom: 0;
-    color: cyan;
-    text-align: center;
-    font-family: 'Faster One';
-}
-
-.sello1 {
-    position: absolute;
-    bottom: 0;
-    color: darkred;
-    text-align: center;
-    font-family: 'Faster One';
-}
-
-.sello2 {
-    position: absolute;
-    bottom: 0;
-    color: darkgreen;
-    text-align: center;
-    font-family: 'Faster One';
-}
-
-.sello3 {
-    position: absolute;
-    bottom: 0;
-    color: darkblue;
-    text-align: center;
-    font-family: 'Faster One';
-}
-
-.sello4 {
-    position: absolute;
-    bottom: 0;
-    color: yellowgreen;
-    text-align: center;
-    font-family: 'Faster One';
-}
-
-.sello5 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    text-align: center;
-    font-family: 'Faster One';
-}
-
-.sello6 {
-    position: absolute;
-    bottom: 0;
-    color: indianred;
-    text-align: center;
-    font-family: 'Faster One';
-}
-
-.sello7 {
-    position: absolute;
-    bottom: 0;
-    color: lightyellow;
-    text-align: center;
-    font-family: 'Faster One';
-}
-
-.sello8 {
-    position: absolute;
-    bottom: 0;
-    color: green;
-    text-align: center;
-    font-family: 'Faster One';
-}
-.sellos {
-     position: absolute;
-    bottom: 0;
-    color: yellow;
-    text-align: center;
-    font-family: 'Big Shoulders Stencil Display';
-    font-size: 5rem;
-    padding-left: 60px;
-    padding-bottom: 100px;
-    transform: rotate(40deg);
-}
-@media all and (min-width: 768px) and (max-width: 980px) {
-    .gallery-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .contenedor {
-        grid-template-columns: repeat(3, 1fr);
-        font-size: 13rem;
-    }
-    .dibujo {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .formulario {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media all and (min-width: 576px) and (max-width: 768px) {
-    .gallery-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .contenedor {
-        grid-template-columns: repeat(2, 1fr);
-        font-size: 9rem;
-    }
-    .dibujo {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .formulario {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media all and (min-width: 0px) and (max-width: 576px) {
-    .gallery-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .contenedor {
-        grid-template-columns: repeat(1, 1fr);
-        font-size: 5rem;
-    }
-    .dibujo {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .formulario {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-.nav-item {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-    padding: 2px;
-    margin: 2px;
-}
-
-.nav-link {
-    font-family: 'Bebas Neue';
-    color: white;
-}
-
-.contenedor {
-    position: relative;
-    display: inline-block;
-}
-.titulo{
-    color: white;
-    font-size: 15rem;
-    font-family: 'Comforter Brush';
-    text-align: center;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.fondo{
-    height: 50%;
-    width: 100%;
-    display: flex;
-}
-
-.parrafo {
-    text-align: center;
-    font-family: 'Oswald';
-    font-size: 1rem;
-    color: black;
-list    box-sizing: border-box;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
+/* line 53, ../../../../../Documents/PF/scss/_main.scss */
 .ilustracion {
-    text-align: center;
-    margin-left: 450px;
+  text-align: center;
+  margin-left: 450px;
 }
 
+/* line 57, ../../../../../Documents/PF/scss/_main.scss */
+.parrafo {
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 1.5rem;
+  font-size: 1rem;
+  color: black;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 69, ../../../../../Documents/PF/scss/_main.scss */
 .suscripcion {
-    text-align: center;
-    font-size: 2rem;
-    color: orangered;
+  text-align: center;
+  font-size: 2rem;
+  color: orangered;
 }
 
+/* line 74, ../../../../../Documents/PF/scss/_main.scss */
 .form {
-    margin-left: 460px;
-    box-sizing: border-box;
-    width: 30%; 
+  margin-left: 460px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 30%;
 }
+
+/*# sourceMappingURL=estilos.css.map */

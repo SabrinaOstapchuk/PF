@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border box;
+}
+
+
+.nav {
+  flex-wrap: wrap;
+  background-color: black;
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  font-family: 'Bebas Neue';
+  font-size: 3rem;
+  text-align: left;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  .nav-item {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 2px;
+  margin: 2px;
+  .nav-link {
+  font-family: 'Bebas Neue';
+  color: white;
+}
+}
+}
+
+.fondo {
+  height: 100vh;
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.titulo {
+  color: white;
+  font-size: 15rem;
+  font-family: 'Comforter Brush';
+  margin-top: 50px;
+  margin-right: 150px;
+  margin-left: 150px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.ilustracion {
+  text-align: center;
+  margin-left: 450px;
+}
+.parrafo {
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 1.5rem;
+  font-size: 1rem;
+  color: black;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.suscripcion {
+  text-align: center;
+  font-size: 2rem;
+  color: orangered;
+}
+.form {
+  margin-left: 460px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 30%;
+}
