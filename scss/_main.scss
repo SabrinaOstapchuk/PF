@@ -3,11 +3,10 @@
   padding: 0;
   box-sizing: border box;
 }
-
-
+ 
+ 
 .nav {
   flex-wrap: wrap;
-  background-color: black;
   list-style-type: none;
   color: white;
   text-decoration: none;
@@ -16,27 +15,27 @@
   text-align: left;
   font-size: 2rem;
   text-align: center;
+  position: fixed;
   width: 100%;
+  background-color: white;
+  opacity: .9;
   .nav-item {
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
-  padding: 2px;
-  margin: 2px;
   .nav-link {
   font-family: 'Bebas Neue';
-  color: #d2591e;
+  color: #EB2F00;
 }
 }
 }
-
+ 
 .fondo {
   height: 100vh;
   height: 50%;
   width: 100%;
   display: flex;
 }
-
+ 
 .titulo {
   color: white;
   font-size: 15rem;
@@ -49,23 +48,26 @@
   top: 10px;
   left: 10px;
 }
-
+@mixin historia{
+  color: black;
+  font-family: 'Amatic SC';
+  text-align: center;
+}
 .subtitulo {
-  color: black;
+  @include historia;
   font-size: 4rem;
-  font-family: 'Amatic SC';
+}
+.dibujo {
   text-align: center;
+  .ilustracion {
+  height: 500px;
+} 
 }
 
-.ilustracion {
-  text-align: center;
-  margin-left: 450px;
-}
+
 .historia {
-  color: black;
+  @include historia;
   font-size: 3rem;
-  font-family: 'Amatic SC';
-  text-align: center;
 }
 .parrafo {
   text-align: center;
@@ -82,7 +84,7 @@
   text-align: center;
   font-family: 'Bebas Neue';
   font-size: 4rem;
-  color: #0c1922;
+  color: #EB2F00;
   box-sizing: border-box;
   margin-top: 20px;
   margin-right: 20px;
@@ -106,3 +108,80 @@
   font-size: 2rem;
   color: #d2591e
 }
+.titulo-abajo{
+  @extend .titulo;
+  color:#D4220B;
+  margin-top:300px;
+  position:relative;
+}
+$estilos: (
+  color: #000,
+  centro: center,
+  font: 'Oswald',
+  2rem:2rem,
+);
+ 
+.list-item {
+  color:map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  font-size:map-get($estilos, 2rem);
+  font-family:map-get($estilos, font);
+}
+.fondo-papas {
+  background-image: url("../imagenes/papas.png");
+  padding-bottom: 50px;
+}
+
+/*combos.html*/
+
+.titulo-menu {
+    font-size: 3rem;
+    font-family: 'Bebas Neue';
+    color: black;
+    text-align: center;
+
+}
+.contenedor{
+ text-align: center;
+.fondo-logo {
+ height: 300px;
+ margin: 70px;
+ margin-bottom: 0px;
+ text-align: center;
+} 
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    padding: 20px;
+    grid-gap: 10px;
+    .gallery__item {
+    position: relative;
+    .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    .gallery__title {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Condensed'; 
+}
+}
+}
+
+@media all and (min-width: 768px) and (max-width: 980px) {
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media all and (min-width: 0px) and (max-width: 576px) {
+    .gallery-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

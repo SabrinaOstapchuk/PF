@@ -15,7 +15,6 @@
 /* line 8, ../../../../../Documents/PF/scss/_main.scss */
 .nav {
   flex-wrap: wrap;
-  background-color: black;
   list-style-type: none;
   color: white;
   text-decoration: none;
@@ -24,25 +23,25 @@
   text-align: left;
   font-size: 2rem;
   text-align: center;
+  position: fixed;
   width: 100%;
+  background-color: white;
+  opacity: .9;
 }
 
-/* line 20, ../../../../../Documents/PF/scss/_main.scss */
+/* line 22, ../../../../../Documents/PF/scss/_main.scss */
 .nav .nav-item {
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
-  padding: 2px;
-  margin: 2px;
 }
 
-/* line 26, ../../../../../Documents/PF/scss/_main.scss */
+/* line 25, ../../../../../Documents/PF/scss/_main.scss */
 .nav .nav-item .nav-link {
   font-family: 'Bebas Neue';
-  color: #d2591e;
+  color: #EB2F00;
 }
 
-/* line 33, ../../../../../Documents/PF/scss/_main.scss */
+/* line 32, ../../../../../Documents/PF/scss/_main.scss */
 .fondo {
   height: 100vh;
   height: 50%;
@@ -50,8 +49,8 @@
   display: flex;
 }
 
-/* line 40, ../../../../../Documents/PF/scss/_main.scss */
-.titulo {
+/* line 39, ../../../../../Documents/PF/scss/_main.scss */
+.titulo, .titulo-abajo {
   color: white;
   font-size: 15rem;
   font-family: 'Comforter Brush';
@@ -64,29 +63,33 @@
   left: 10px;
 }
 
-/* line 53, ../../../../../Documents/PF/scss/_main.scss */
+/* line 56, ../../../../../Documents/PF/scss/_main.scss */
 .subtitulo {
   color: black;
-  font-size: 4rem;
   font-family: 'Amatic SC';
   text-align: center;
+  font-size: 4rem;
 }
 
 /* line 60, ../../../../../Documents/PF/scss/_main.scss */
-.ilustracion {
+.dibujo {
   text-align: center;
-  margin-left: 450px;
 }
 
-/* line 64, ../../../../../Documents/PF/scss/_main.scss */
+/* line 62, ../../../../../Documents/PF/scss/_main.scss */
+.dibujo .ilustracion {
+  height: 500px;
+}
+
+/* line 68, ../../../../../Documents/PF/scss/_main.scss */
 .historia {
   color: black;
-  font-size: 3rem;
   font-family: 'Amatic SC';
   text-align: center;
+  font-size: 3rem;
 }
 
-/* line 70, ../../../../../Documents/PF/scss/_main.scss */
+/* line 72, ../../../../../Documents/PF/scss/_main.scss */
 .parrafo {
   text-align: center;
   font-family: 'Oswald';
@@ -99,12 +102,12 @@
   margin-bottom: 20px;
 }
 
-/* line 81, ../../../../../Documents/PF/scss/_main.scss */
+/* line 83, ../../../../../Documents/PF/scss/_main.scss */
 .sub {
   text-align: center;
   font-family: 'Bebas Neue';
   font-size: 4rem;
-  color: #0c1922;
+  color: #EB2F00;
   box-sizing: border-box;
   margin-top: 20px;
   margin-right: 20px;
@@ -112,14 +115,14 @@
   margin-bottom: 20px;
 }
 
-/* line 92, ../../../../../Documents/PF/scss/_main.scss */
+/* line 94, ../../../../../Documents/PF/scss/_main.scss */
 .suscripcion {
   text-align: center;
   font-size: 2rem;
   color: orangered;
 }
 
-/* line 97, ../../../../../Documents/PF/scss/_main.scss */
+/* line 99, ../../../../../Documents/PF/scss/_main.scss */
 .form {
   margin-left: 460px;
   margin-bottom: 20px;
@@ -127,12 +130,99 @@
   width: 30%;
 }
 
-/* line 103, ../../../../../Documents/PF/scss/_main.scss */
+/* line 105, ../../../../../Documents/PF/scss/_main.scss */
 .list-item {
   text-align: center;
   font-family: 'Oswald';
   font-size: 2rem;
   color: #d2591e;
+}
+
+/* line 111, ../../../../../Documents/PF/scss/_main.scss */
+.titulo-abajo {
+  color: #D4220B;
+  margin-top: 300px;
+  position: relative;
+}
+
+/* line 124, ../../../../../Documents/PF/scss/_main.scss */
+.list-item {
+  color: #000;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Oswald";
+}
+
+/* line 130, ../../../../../Documents/PF/scss/_main.scss */
+.fondo-papas {
+  background-image: url("../imagenes/papas.png");
+  padding-bottom: 50px;
+}
+
+/*combos.html*/
+/* line 137, ../../../../../Documents/PF/scss/_main.scss */
+.titulo-menu {
+  font-size: 3rem;
+  font-family: 'Bebas Neue';
+  color: black;
+  text-align: center;
+}
+
+/* line 144, ../../../../../Documents/PF/scss/_main.scss */
+.contenedor {
+  text-align: center;
+}
+
+/* line 146, ../../../../../Documents/PF/scss/_main.scss */
+.contenedor .fondo-logo {
+  height: 300px;
+  margin: 70px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* line 154, ../../../../../Documents/PF/scss/_main.scss */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+/* line 160, ../../../../../Documents/PF/scss/_main.scss */
+.gallery-container .gallery__item {
+  position: relative;
+}
+
+/* line 162, ../../../../../Documents/PF/scss/_main.scss */
+.gallery-container .gallery__item .gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* line 167, ../../../../../Documents/PF/scss/_main.scss */
+.gallery-container .gallery__item .gallery__title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto Condensed';
+}
+
+@media all and (min-width: 768px) and (max-width: 980px) {
+  /* line 178, ../../../../../Documents/PF/scss/_main.scss */
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 576px) {
+  /* line 183, ../../../../../Documents/PF/scss/_main.scss */
+  .gallery-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
