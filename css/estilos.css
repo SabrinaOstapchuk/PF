@@ -103,7 +103,7 @@
 }
 
 /* line 83, ../../../../../Documents/PF/scss/_main.scss */
-.sub {
+.sub, .burger-main-title, .pizzas {
   text-align: center;
   font-family: 'Bebas Neue';
   font-size: 4rem;
@@ -211,16 +211,54 @@
   font-family: 'Roboto Condensed';
 }
 
+/* line 176, ../../../../../Documents/PF/scss/_main.scss */
+.burgers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  padding-left: 80px;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+/* line 187, ../../../../../Documents/PF/scss/_main.scss */
+.imagen {
+  height: 300px;
+}
+
+/* line 190, ../../../../../Documents/PF/scss/_main.scss */
+.imagen-a {
+  height: 220px;
+}
+
+/* line 193, ../../../../../Documents/PF/scss/_main.scss */
+.imagen-b {
+  height: 190px;
+}
+
+/* line 196, ../../../../../Documents/PF/scss/_main.scss */
+.burger-title {
+  bottom: 0;
+  color: #D4220B;
+  text-align: center;
+  font-family: 'Bebas Neue';
+}
+
+/* line 203, ../../../../../Documents/PF/scss/_main.scss */
+.pizzas {
+  font-size: 4rem;
+}
+
 @media all and (min-width: 768px) and (max-width: 980px) {
-  /* line 178, ../../../../../Documents/PF/scss/_main.scss */
-  .gallery-container {
+  /* line 209, ../../../../../Documents/PF/scss/_main.scss */
+  .burgers {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media all and (min-width: 0px) and (max-width: 576px) {
-  /* line 183, ../../../../../Documents/PF/scss/_main.scss */
-  .gallery-container {
+  /* line 214, ../../../../../Documents/PF/scss/_main.scss */
+  .burgers {
     grid-template-columns: repeat(1, 1fr);
   }
 }
