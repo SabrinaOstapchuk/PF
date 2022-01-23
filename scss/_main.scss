@@ -4,8 +4,11 @@
   box-sizing: border box;
 }
  
- 
-.nav {
+.logo-nav{
+  width:50px;
+  margin-left:10px;
+}
+.navbar{
   flex-wrap: wrap;
   list-style-type: none;
   color: white;
@@ -119,6 +122,7 @@ $estilos: (
   centro: center,
   font: 'Oswald',
   2rem:2rem,
+  estilo:none,
 );
  
 .list-item {
@@ -126,6 +130,7 @@ $estilos: (
   text-align: map-get($estilos, centro);
   font-size:map-get($estilos, 2rem);
   font-family:map-get($estilos, font);
+  list-style:map-get($estilos, estilo);
 }
 .fondo-papas {
   background-image: url("../imagenes/papas.png");

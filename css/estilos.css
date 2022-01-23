@@ -13,8 +13,14 @@
   box-sizing: border box;
 }
 
-/* line 8, ../../../../../Documents/PF/scss/_main.scss */
-.nav {
+/* line 7, ../../../../../Documents/PF/scss/_main.scss */
+.logo-nav {
+  width: 50px;
+  margin-left: 10px;
+}
+
+/* line 11, ../../../../../Documents/PF/scss/_main.scss */
+.navbar {
   flex-wrap: wrap;
   list-style-type: none;
   color: white;
@@ -30,19 +36,19 @@
   opacity: .9;
 }
 
-/* line 22, ../../../../../Documents/PF/scss/_main.scss */
-.nav .nav-item {
+/* line 25, ../../../../../Documents/PF/scss/_main.scss */
+.navbar .nav-item {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 25, ../../../../../Documents/PF/scss/_main.scss */
-.nav .nav-item .nav-link {
+/* line 28, ../../../../../Documents/PF/scss/_main.scss */
+.navbar .nav-item .nav-link {
   font-family: 'Bebas Neue';
   color: #EB2F00;
 }
 
-/* line 32, ../../../../../Documents/PF/scss/_main.scss */
+/* line 35, ../../../../../Documents/PF/scss/_main.scss */
 .fondo {
   height: 100vh;
   height: 50%;
@@ -50,7 +56,7 @@
   display: flex;
 }
 
-/* line 39, ../../../../../Documents/PF/scss/_main.scss */
+/* line 42, ../../../../../Documents/PF/scss/_main.scss */
 .titulo, .titulo-abajo {
   color: white;
   font-size: 15rem;
@@ -64,7 +70,7 @@
   left: 10px;
 }
 
-/* line 56, ../../../../../Documents/PF/scss/_main.scss */
+/* line 59, ../../../../../Documents/PF/scss/_main.scss */
 .subtitulo {
   color: black;
   font-family: 'Amatic SC';
@@ -72,17 +78,17 @@
   font-size: 4rem;
 }
 
-/* line 60, ../../../../../Documents/PF/scss/_main.scss */
+/* line 63, ../../../../../Documents/PF/scss/_main.scss */
 .dibujo {
   text-align: center;
 }
 
-/* line 62, ../../../../../Documents/PF/scss/_main.scss */
+/* line 65, ../../../../../Documents/PF/scss/_main.scss */
 .dibujo .ilustracion {
   height: 500px;
 }
 
-/* line 68, ../../../../../Documents/PF/scss/_main.scss */
+/* line 71, ../../../../../Documents/PF/scss/_main.scss */
 .historia {
   color: black;
   font-family: 'Amatic SC';
@@ -90,7 +96,7 @@
   font-size: 3rem;
 }
 
-/* line 72, ../../../../../Documents/PF/scss/_main.scss */
+/* line 75, ../../../../../Documents/PF/scss/_main.scss */
 .parrafo, .horarios-dias, .parrafo-nosotros {
   text-align: center;
   font-family: 'Oswald';
@@ -103,7 +109,7 @@
   margin-bottom: 20px;
 }
 
-/* line 83, ../../../../../Documents/PF/scss/_main.scss */
+/* line 86, ../../../../../Documents/PF/scss/_main.scss */
 .sub, .burger-main-title, .pizza-title, .sucursales, .horarios {
   text-align: center;
   font-family: 'Bebas Neue';
@@ -116,14 +122,14 @@
   margin-bottom: 20px;
 }
 
-/* line 94, ../../../../../Documents/PF/scss/_main.scss */
+/* line 97, ../../../../../Documents/PF/scss/_main.scss */
 .suscripcion {
   text-align: center;
   font-size: 2rem;
   color: orangered;
 }
 
-/* line 99, ../../../../../Documents/PF/scss/_main.scss */
+/* line 102, ../../../../../Documents/PF/scss/_main.scss */
 .form {
   margin-left: 460px;
   margin-bottom: 20px;
@@ -131,7 +137,7 @@
   width: 30%;
 }
 
-/* line 105, ../../../../../Documents/PF/scss/_main.scss */
+/* line 108, ../../../../../Documents/PF/scss/_main.scss */
 .list-item {
   text-align: center;
   font-family: 'Oswald';
@@ -139,29 +145,30 @@
   color: #d2591e;
 }
 
-/* line 111, ../../../../../Documents/PF/scss/_main.scss */
+/* line 114, ../../../../../Documents/PF/scss/_main.scss */
 .titulo-abajo {
   color: #D4220B;
   margin-top: 300px;
   position: relative;
 }
 
-/* line 124, ../../../../../Documents/PF/scss/_main.scss */
+/* line 128, ../../../../../Documents/PF/scss/_main.scss */
 .list-item {
   color: #000;
   text-align: center;
   font-size: 2rem;
   font-family: "Oswald";
+  list-style: none;
 }
 
-/* line 130, ../../../../../Documents/PF/scss/_main.scss */
+/* line 135, ../../../../../Documents/PF/scss/_main.scss */
 .fondo-papas {
   background-image: url("../imagenes/papas.png");
   padding-bottom: 50px;
 }
 
 /*combos.html*/
-/* line 137, ../../../../../Documents/PF/scss/_main.scss */
+/* line 142, ../../../../../Documents/PF/scss/_main.scss */
 .titulo-menu {
   font-size: 3rem;
   font-family: 'Bebas Neue';
@@ -169,12 +176,12 @@
   text-align: center;
 }
 
-/* line 144, ../../../../../Documents/PF/scss/_main.scss */
+/* line 149, ../../../../../Documents/PF/scss/_main.scss */
 .contenedor {
   text-align: center;
 }
 
-/* line 146, ../../../../../Documents/PF/scss/_main.scss */
+/* line 151, ../../../../../Documents/PF/scss/_main.scss */
 .contenedor .fondo-logo {
   height: 300px;
   margin: 70px;
@@ -182,7 +189,7 @@
   text-align: center;
 }
 
-/* line 154, ../../../../../Documents/PF/scss/_main.scss */
+/* line 159, ../../../../../Documents/PF/scss/_main.scss */
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -191,19 +198,19 @@
   grid-gap: 10px;
 }
 
-/* line 160, ../../../../../Documents/PF/scss/_main.scss */
+/* line 165, ../../../../../Documents/PF/scss/_main.scss */
 .gallery-container .gallery__item {
   position: relative;
 }
 
-/* line 162, ../../../../../Documents/PF/scss/_main.scss */
+/* line 167, ../../../../../Documents/PF/scss/_main.scss */
 .gallery-container .gallery__item .gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* line 167, ../../../../../Documents/PF/scss/_main.scss */
+/* line 172, ../../../../../Documents/PF/scss/_main.scss */
 .gallery-container .gallery__item .gallery__title {
   position: absolute;
   bottom: 0;
@@ -212,7 +219,7 @@
   font-family: 'Roboto Condensed';
 }
 
-/* line 176, ../../../../../Documents/PF/scss/_main.scss */
+/* line 181, ../../../../../Documents/PF/scss/_main.scss */
 .burgers, .pizzas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -222,22 +229,22 @@
   text-align: center;
 }
 
-/* line 187, ../../../../../Documents/PF/scss/_main.scss */
+/* line 192, ../../../../../Documents/PF/scss/_main.scss */
 .imagen {
   height: 300px;
 }
 
-/* line 190, ../../../../../Documents/PF/scss/_main.scss */
+/* line 195, ../../../../../Documents/PF/scss/_main.scss */
 .imagen-a {
   height: 220px;
 }
 
-/* line 193, ../../../../../Documents/PF/scss/_main.scss */
+/* line 198, ../../../../../Documents/PF/scss/_main.scss */
 .imagen-b {
   height: 190px;
 }
 
-/* line 196, ../../../../../Documents/PF/scss/_main.scss */
+/* line 201, ../../../../../Documents/PF/scss/_main.scss */
 .burger-title {
   bottom: 0;
   color: #D4220B;
@@ -245,39 +252,39 @@
   font-family: 'Bebas Neue';
 }
 
-/* line 203, ../../../../../Documents/PF/scss/_main.scss */
+/* line 208, ../../../../../Documents/PF/scss/_main.scss */
 .pizza-title {
   font-size: 4rem;
 }
 
-/* line 208, ../../../../../Documents/PF/scss/_main.scss */
+/* line 213, ../../../../../Documents/PF/scss/_main.scss */
 .pizzas {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* line 213, ../../../../../Documents/PF/scss/_main.scss */
+/* line 218, ../../../../../Documents/PF/scss/_main.scss */
 .imagen-p {
   height: 220px;
 }
 
-/* line 216, ../../../../../Documents/PF/scss/_main.scss */
+/* line 221, ../../../../../Documents/PF/scss/_main.scss */
 .imagen-c {
   height: 250px;
 }
 
-/* line 219, ../../../../../Documents/PF/scss/_main.scss */
+/* line 224, ../../../../../Documents/PF/scss/_main.scss */
 .imagen-k {
   height: 250px;
 }
 
 /*SUCURSALES*/
-/* line 224, ../../../../../Documents/PF/scss/_main.scss */
+/* line 229, ../../../../../Documents/PF/scss/_main.scss */
 .fondo-sucursales {
   opacity: .9;
   height: 75%;
 }
 
-/* line 228, ../../../../../Documents/PF/scss/_main.scss */
+/* line 233, ../../../../../Documents/PF/scss/_main.scss */
 .titulo-sucursales, .titulo-nosotros {
   font-family: 'Josefin Sans';
   font-size: 6rem;
@@ -290,110 +297,110 @@
   margin-left: 230px;
 }
 
-/* line 242, ../../../../../Documents/PF/scss/_main.scss */
+/* line 247, ../../../../../Documents/PF/scss/_main.scss */
 .mapa {
   text-align: center;
 }
 
-/* line 245, ../../../../../Documents/PF/scss/_main.scss */
+/* line 250, ../../../../../Documents/PF/scss/_main.scss */
 .horarios {
   font-size: 2rem;
 }
 
-/* line 252, ../../../../../Documents/PF/scss/_main.scss */
+/* line 257, ../../../../../Documents/PF/scss/_main.scss */
 .titulo-nosotros {
   margin-top: 250px;
   margin-left: 0px;
   padding-left: 450px;
 }
 
-/* line 258, ../../../../../Documents/PF/scss/_main.scss */
+/* line 263, ../../../../../Documents/PF/scss/_main.scss */
 .parrafo-nosotros {
   font-family: 'Josefin Sans';
 }
 
 /*RESPONSIVE*/
 @media all and (min-width: 768px) and (max-width: 980px) {
-  /* line 267, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 272, ../../../../../Documents/PF/scss/_main.scss */
   .burgers, .pizzas {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media all and (min-width: 0px) and (max-width: 576px) {
-  /* line 272, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 277, ../../../../../Documents/PF/scss/_main.scss */
   .titulo, .titulo-abajo {
     font-size: 5rem;
     margin-top: 0px;
     margin-left: 0px;
   }
-  /* line 277, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 282, ../../../../../Documents/PF/scss/_main.scss */
   .titulo-abajo {
     margin-right: 0px;
   }
-  /* line 280, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 285, ../../../../../Documents/PF/scss/_main.scss */
   .sub, .burger-main-title, .pizza-title, .sucursales, .horarios {
     font-size: 2rem;
   }
-  /* line 283, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 288, ../../../../../Documents/PF/scss/_main.scss */
   .dibujo {
     text-align: center;
   }
-  /* line 285, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 290, ../../../../../Documents/PF/scss/_main.scss */
   .dibujo .ilustracion {
     height: 200px;
   }
-  /* line 289, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 294, ../../../../../Documents/PF/scss/_main.scss */
   .subtitulo {
     font-size: 2rem;
   }
-  /* line 292, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 297, ../../../../../Documents/PF/scss/_main.scss */
   .historia {
     font-size: 2rem;
   }
-  /* line 295, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 300, ../../../../../Documents/PF/scss/_main.scss */
   .list-item {
     font-size: 1.5rem;
   }
-  /* line 298, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 303, ../../../../../Documents/PF/scss/_main.scss */
   .parrafo, .horarios-dias, .parrafo-nosotros {
     font-size: 1.5rem;
   }
-  /* line 301, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 306, ../../../../../Documents/PF/scss/_main.scss */
   .contenedor {
     text-align: center;
   }
-  /* line 303, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 308, ../../../../../Documents/PF/scss/_main.scss */
   .contenedor .fondo-logo {
     height: 200px;
     margin: 70px;
     margin-bottom: 0px;
     text-align: center;
   }
-  /* line 310, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 315, ../../../../../Documents/PF/scss/_main.scss */
   .titulo-sucursales, .titulo-nosotros {
     font-size: 3rem;
     margin-top: 100px;
     margin-left: 0px;
   }
-  /* line 315, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 320, ../../../../../Documents/PF/scss/_main.scss */
   .titulo-nosotros {
     font-size: 3rem;
     margin-top: 80px;
     padding-left: 100px;
   }
-  /* line 320, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 325, ../../../../../Documents/PF/scss/_main.scss */
   .form {
     margin-left: 100px;
     margin-bottom: 20px;
     box-sizing: border-box;
     width: 50%;
   }
-  /* line 332, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 337, ../../../../../Documents/PF/scss/_main.scss */
   .burgers, .pizzas {
     grid-template-columns: repeat(1, 1fr);
   }
-  /* line 335, ../../../../../Documents/PF/scss/_main.scss */
+  /* line 340, ../../../../../Documents/PF/scss/_main.scss */
   .pizzas {
     grid-template-columns: repeat(1, 1fr);
   }
