@@ -200,25 +200,6 @@ $estilos: (
     font-family: 'Bebas Neue'; 
 }
 
-.pizza-title{
-  @extend .sub;
-  font-size: 4rem;
-}
-
-.pizzas {
-  @extend .burgers;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.imagen-p{
-  height:220px;
-}
-.imagen-c{
-  height:250px;
-}
-.imagen-k{
-  height:250px;
-}
            /*SUCURSALES*/
 
 .fondo-sucursales {
@@ -294,11 +275,7 @@ $estilos: (
 
 
            /*RESPONSIVE*/
-@media all and (min-width: 768px) and (max-width: 980px) {
-    .burgers {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+
 @media all and (min-width: 0px) and (max-width: 576px) {
     .titulo {
     font-size:5rem;
@@ -354,17 +331,16 @@ $estilos: (
   box-sizing: border-box;
   width: 50%;
 }
-
-
-
-
-
-
+  .mapa {
+   overflow:hidden;
+   padding-bottom:56.25%;
+   height:0;
+  }
     .burgers {
         grid-template-columns: repeat(1, 1fr);
-    }
-    .pizzas {
-        grid-template-columns: repeat(1, 1fr);
+        text-align:center;
+        margin:0;
+        padding:0;
     }
 }
 
