@@ -99,12 +99,7 @@
   font-size: 2rem;
   color: orangered;
 }
-.form {
-  margin-left: 460px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  width: 30%;
-}
+
 .list-item {
   text-align: center;
   font-family: 'Oswald';
@@ -265,6 +260,37 @@ $estilos: (
   font-family:'Josefin Sans';
 }
 
+           /*CONTACTO*/
+
+.form {
+  margin-left: 460px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 30%;
+}
+
+.formulario {
+  .form {
+   .form-label {
+   color: #ff4500;
+   }
+   .form-control:focus{
+    border-color: #ff4500;
+   }
+  }
+  .form-check{
+   .form-check-label {
+    color: #0b370b;
+   }
+   .form-check-input{
+    background-color: #0b370b;
+   }
+  }
+  .btn-primary {
+    background-color: #ff4500;
+    border-color: #ff4500;
+   }
+}
 
 
            /*RESPONSIVE*/
